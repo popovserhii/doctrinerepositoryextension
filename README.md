@@ -1,6 +1,6 @@
 <a name="configuration"></a>
 
-### Configuration
+# Configuration
 
 ```yaml
 #config.yml
@@ -19,7 +19,7 @@ mp_doctrine:
                     class: %model.doctrine.orm.repositories_resolver.class%
 ```
 
-### Usage
+# Usage
 
 STEP 1:
 --------
