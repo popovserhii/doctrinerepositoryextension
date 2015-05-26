@@ -1,6 +1,6 @@
 # Installation
 
-```composer.json```
+composer.json
 ```json
 ...
 "require": {
