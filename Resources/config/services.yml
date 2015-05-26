@@ -1,0 +1,17 @@
+parameters:
+  model.doctrine.orm.default_repository_factory.class: Mediapark\MPDoctrineREpositoryExtensionBundle\ORM\Repository\MPDefaultRepositoryFactory
+  model.doctrine.orm.repositories_resolver.class: Mediapark\MPDoctrineREpositoryExtensionBundle\ORM\Annotations\RepositoriesResolver
+  doctrine.orm.entity_manager.class: Mediapark\MPDoctrineREpositoryExtensionBundle\ORM\MPEntityManager
+  mp.doctrine.configuration.class_name: Mediapark\MPDoctrineREpositoryExtensionBundle\ORM\Configuration\MPConfiguration
+
+services:
+    mp.doctrine.configuration:
+      class: Mediapark\MPDoctrineREpositoryExtensionBundle\ORM\Configuration\MPConfiguration
+
+    doctrine.orm.entity_manager.abstract:
+      class: %doctrine.orm.entity_manager.class%
+      factory_class: %doctrine.orm.entity_manager.class%
+      factory_method: "customCreate"
+      abstract: true
+      arguments:
+        mp_doctrine_configuration: "@mp.doctrine.configuration"

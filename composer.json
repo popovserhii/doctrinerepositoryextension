@@ -1,0 +1,30 @@
+{
+    "name" : "mediapark/doctrine-repository-extension",
+    "description" : "Mediapark doctrine extension",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "algirdas",
+        "email" : "algirdas@mediapark.lt"
+    }],
+    "keywords" : [
+        "doctrine extension"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {},
+    "autoload" : {
+        "psr-0" : {
+            "Mediapark\\MPDoctrineRepositoryExtensionBundle" : ""
+        }
+    },
+    "minimum-stability": "dev",
+    "target-dir" : "Mediapark/MPDoctrineRepositoryExtensionBundle",
+    "repositories" : [{
+    }],
+    "extra" : {
+    "branch-alias" : {
+            "dev-master" : "0.1-dev"
+        }
+    }
+}
