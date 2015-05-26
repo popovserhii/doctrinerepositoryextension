@@ -1,6 +1,6 @@
 <?php
 
-namespace Mediapark\MPDoctrineREpositoryExtensionBundle\ORM\Annotations;
+namespace Mediapark\MPDoctrineRepositoryExtensionBundle\ORM\Annotations;
 
 use Doctrine\Common\Annotations\AnnotationReader;
 

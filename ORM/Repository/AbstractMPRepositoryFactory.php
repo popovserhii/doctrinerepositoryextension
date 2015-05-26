@@ -1,10 +1,10 @@
 <?php
 
-namespace Mediapark\MPDoctrineREpositoryExtensionBundle\ORM\Repository;
+namespace Mediapark\MPDoctrineRepositoryExtensionBundle\ORM\Repository;
 
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Repository;
-use Mediapark\MPDoctrineREpositoryExtensionBundle\ORM\Repository\EntityRepositories\IntefaceMPEntityRepositories;
+use Mediapark\MPDoctrineRepositoryExtensionBundle\ORM\Repository\EntityRepositories\IntefaceMPEntityRepositories;
 
 abstract class AbstractMPRepositoryFactory implements InterfaceMPRepositoryFactory
 {

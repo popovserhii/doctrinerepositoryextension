@@ -1,6 +1,6 @@
 <?php
 
-namespace Mediapark\MPDoctrineREpositoryExtensionBundle\ORM\Repository\EntityRepositories;
+namespace Mediapark\MPDoctrineRepositoryExtensionBundle\ORM\Repository\EntityRepositories;
 
 abstract class AbstractMPEntityRepositories
 {

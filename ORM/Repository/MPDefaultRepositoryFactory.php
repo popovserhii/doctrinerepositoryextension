@@ -1,12 +1,12 @@
 <?php
 
-namespace Mediapark\MPDoctrineREpositoryExtensionBundle\ORM\Repository;
+namespace Mediapark\MPDoctrineRepositoryExtensionBundle\ORM\Repository;
 
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Repository\RepositoryFactory;
 use Doctrine\ORM\Repository\DefaultRepositoryFactory;
-use Mediapark\MPDoctrineREpositoryExtensionBundle\ORM\Annotations\InterfaceMPRepositoriesResolver;
-use Mediapark\MPDoctrineREpositoryExtensionBundle\ORM\Repository\EntityRepositories\MPEntityRepositories;
+use Mediapark\MPDoctrineRepositoryExtensionBundle\ORM\Annotations\InterfaceMPRepositoriesResolver;
+use Mediapark\MPDoctrineRepositoryExtensionBundle\ORM\Repository\EntityRepositories\MPEntityRepositories;
 
 class MPDefaultRepositoryFactory extends AbstractMPRepositoryFactory
 {

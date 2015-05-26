@@ -1,6 +1,6 @@
 <?php
 
-namespace Mediapark\MPDoctrineREpositoryExtensionBundle\ORM\Configuration;
+namespace Mediapark\MPDoctrineRepositoryExtensionBundle\ORM\Configuration;
 
 abstract class AbstractMPConfiguration implements InterfaceMPConfiguration {
 

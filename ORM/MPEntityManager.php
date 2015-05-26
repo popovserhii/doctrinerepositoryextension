@@ -1,6 +1,6 @@
 <?php
 
-namespace Mediapark\MPDoctrineREpositoryExtensionBundle\ORM;
+namespace Mediapark\MPDoctrineRepositoryExtensionBundle\ORM;
 
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Configuration;
@@ -8,8 +8,8 @@ use Doctrine\ORM\Repository\RepositoryFactory;
 use Doctrine\ORM\ORMException;
 use Doctrine\Common\EventManager;
 use Doctrine\DBAL\Connection;
-use Mediapark\MPDoctrineREpositoryExtensionBundle\ORM\Repository;
-use Mediapark\MPDoctrineREpositoryExtensionBundle\ORM\Configuration\InterfaceMPConfiguration;
+use Mediapark\MPDoctrineRepositoryExtensionBundle\ORM\Repository;
+use Mediapark\MPDoctrineRepositoryExtensionBundle\ORM\Configuration\InterfaceMPConfiguration;
 //use Model\MainBundle\Annotations\RepositoryResolver;
 
 class MPEntityManager extends EntityManager {
