@@ -1,4 +1,32 @@
-<a name="configuration"></a>
+# Installation
+
+```composer.json```
+```json
+...
+"require": {
+  ...
+  "mediapark/doctrine-repository-extension": "dev-master",
+},
+...
+```
+
+```sh
+composer update mediapark/doctrine-repository-extension
+```
+
+```php
+//AppKernel.php
+...
+public function registerBundles() {
+  $bundles = array(
+    ...
+    new Mediapark\MPDoctrineRepositoryExtensionBundle\MediaparkMPDoctrineRepositoryExtensionBundle(),
+    ...
+  );
+  ...
+}
+...
+```
 
 # Configuration
 
