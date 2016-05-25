@@ -1,14 +1,27 @@
 # Installation
 
 composer.json
+
+Symfony 2.x
 ```json
 ...
 "require": {
   ...
-  "mediapark/doctrine-repository-extension": "dev-master",
+  "mediapark/doctrine-repository-extension": "~0.1", 
 },
 ...
 ```
+
+Symfony 3.x
+```json
+...
+"require": {
+  ...
+  "mediapark/doctrine-repository-extension": "~0.2", 
+},
+...
+```
+
 
 ```sh
 composer update mediapark/doctrine-repository-extension
