@@ -9,9 +9,8 @@ services:
       class: Mediapark\MPDoctrineRepositoryExtensionBundle\ORM\Configuration\MPConfiguration
 
     doctrine.orm.entity_manager.abstract:
-      class: %doctrine.orm.entity_manager.class%
-      factory_class: %doctrine.orm.entity_manager.class%
-      factory_method: "customCreate"
+      class: "%doctrine.orm.entity_manager.class%"
+      factory:  ["%doctrine.orm.entity_manager.class%", "customCreate"]
       abstract: true
       arguments:
         mp_doctrine_configuration: "@mp.doctrine.configuration"
