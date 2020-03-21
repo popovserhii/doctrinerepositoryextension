@@ -10,7 +10,11 @@ services:
 
     doctrine.orm.entity_manager.abstract:
       class: "%doctrine.orm.entity_manager.class%"
-      factory:  ["%doctrine.orm.entity_manager.class%", "customCreate"]
+      #factory:  ["%doctrine.orm.entity_manager.class%", "customCreate"]
+      factory:  ['Mediapark\MPDoctrineRepositoryExtensionBundle\ORM\MPEntityManager', "customCreate"]
       abstract: true
       arguments:
-        mp_doctrine_configuration: "@mp.doctrine.configuration"
+        - "@mp.doctrine.configuration"
+        - "@doctrine.dbal.default_connection"
+        - "@doctrine.orm.default_configuration"
+        - "@doctrine.dbal.event_manager"
