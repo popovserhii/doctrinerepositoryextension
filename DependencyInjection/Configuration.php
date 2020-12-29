@@ -18,8 +18,14 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('mp_doctrine');
+        $treeBuilder = new TreeBuilder('mp_doctrine');
+
+        if (method_exists($treeBuilder, 'getRootNode')) {
+            $rootNode = $treeBuilder->getRootNode();
+        } else {
+            // symfony < 4.2 support
+            $rootNode = $treeBuilder->root('mp_doctrine');
+        }
 
         $this->addORMSection($rootNode);
 
